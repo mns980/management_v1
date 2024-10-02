@@ -1,0 +1,175 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #004d40;
+    background-color: #e0f2f1;
+}
+/* تعديل الشريط العلوي */
+header {
+    background-color: #00796b; /* اللون الخلفي */
+    padding: 15px 30px;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ظل أسفل الشريط */
+    border-bottom: 3px solid #005b4f; /* حد سفلي */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* تنسيق الروابط داخل الشريط العلوي */
+.navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 70px; /* المسافة من الأعلى */
+    right: 10px; /* المسافة من اليمين */
+}
+
+.home-link {
+    margin-right: auto; /* يجعل "الرئيسية" على اليسار */
+}
+
+.contact-link {
+    margin-left: auto; /* يجعل "تواصل معنا" على اليمين */
+}
+/* إعدادات الـ main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 20px;
+    background-color: #e0f2f1;
+    min-height: 90vh;
+}
+
+/* إعدادات المقدمة */
+.intro {
+    max-width: 800px;
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.intro h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+.intro p {
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: #004d40;
+}
+
+.important-message {
+    font-size: 26px;
+    font-weight: bold;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+/* إعدادات الأزرار */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 20px 50px;
+    color: #00796b; /* لون النص ليكون متناسقاً مع الخلفية */
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 22px;
+    background-color: #e0f2f1; /* لون خلفية فاتح للأزرار */
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* إعدادات التحويم */
+.btn:hover {
+    background-color: #00796b; /* اللون الغامق يظهر عند مرور الفأرة */
+    transform: scale(1.05);
+    color: #fff; /* لون النص يتحول إلى الأبيض عند التحويم */
+}
+
+/* إعدادات التذييل */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #004d40;
+    border-top: 2px solid #00796b;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* زر العودة للأعلى */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.back-to-top a:hover {
+    background-color: #004d40;
+}
+
+.admin-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #d39f2f; 
+}
+
+.admin-link:hover {
+    background-color: #a36b17; 
+    transform: scale(1.05);
+}

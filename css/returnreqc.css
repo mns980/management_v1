@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    background-color: #f0f4f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+main {
+    padding: 100px 20px 20px 20px;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #00796b;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #004d40;
+    color: #e0f2f1;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-link {
+    margin-right: auto;
+}
+
+.center-link {
+    margin: 0 auto;
+}
+
+.contact-link {
+    margin-left: auto;
+}
+
+/* Intro Section */
+.intro {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1 {
+    text-align: center;
+    color: #00796b;
+}
+
+/* Bordered Section (without bottom border) */
+.bordered-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.centered-text {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Download Button */
+.download-button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

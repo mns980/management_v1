@@ -1,0 +1,174 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* إضافة حواف حول الصفحة */
+    background-color: #f0f4f3;
+    transition: background-color 0.3s ease;
+    position: relative;
+    box-sizing: border-box; /* ضمان أن الحواف تُحتسب ضمن العرض الكلي */
+}
+
+/* Navbar Styles */
+header {
+    width: 100%;
+    background-color: #00796b;
+    padding: 15px 0; /* زيادة المساحة الرأسية */
+    position: fixed; /* تثبيت القائمة في الأعلى */
+    top: 0;
+    z-index: 1000; /* ضمان بقاء القائمة فوق باقي العناصر */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف أسفل القائمة */
+    border-bottom: 3px solid #004d40; /* حد سفلي */
+    display: flex;
+    justify-content: center; /* جعل الأزرار في وسط القائمة */
+    align-items: center;
+    padding-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #00796b;
+}
+
+nav ul li {
+    margin: 0 20px; /* إضافة مسافة بين "الرئيسية - من نحن" */
+    text-align: center; /* محاذاة النص في الوسط */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px; /* زيادة المساحة حول الروابط */
+    display: block;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    border-radius: 5px;
+}
+
+/* تأثير التحويم */
+nav ul li a:hover {
+    background-color: #004d40;
+    color: #e0f2f1;
+    transform: translateY(-0.5px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+nav ul li a:active {
+    background-color: #388e3c;
+    transform: translateY(0);
+}
+
+main {
+    margin-top: 120px; /* تعديل المسافة العلوية لتأخذ في الاعتبار القائمة الثابتة */
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+    width: 100%;
+    padding: 20px; /* إضافة حواف حول المحتوى */
+    box-sizing: border-box;
+}
+
+/* Fade-in effect */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    max-width: 1000px; /* ضبط العرض الأقصى */
+    margin: 20px auto; /* إضافة مسافة حول الجدول */
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    word-wrap: break-word; /* منع النص من الخروج خارج الحدود */
+}
+
+th {
+    background-color: #00796b;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e0f2f1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 15px 0; /* زيادة المساحة الرأسية */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        margin-top: 140px; /* زيادة المسافة العلوية للشاشات الصغيرة */
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}

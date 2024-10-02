@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9; /* استخدام اللون الأبيض المطلوب */
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+/* Navbar Styles */
+header {
+    width: 100%;
+    background-color: #00796b;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #004d40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* تعديل الصورة لتكون أسفل قليلاً */
+.logo {
+    position: absolute;
+    top: 100px; /* أسفل قليلاً */
+    right: 10px; /* يمين الصفحة */
+    height: 80px; /* حجم صغير */
+    width: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;
+    gap: 50px; /* Space between the links */
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #004d40;
+    color: #e0f2f1;
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content */
+main {
+    margin-top: 150px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+/* Fade-in effect */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Welcome Message Styles */
+.welcome-message {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: -30px;
+    color: rgb(0, 0, 0);
+}
+
+.welcome-message h2 {
+    font-size: 58px;
+    color: #000000;
+    margin-bottom: 10px;
+    animation: fadeInUp 0.8s 0.2s forwards;
+}
+
+.welcome-message p {
+    font-size: 28px;
+    color: #000000;
+    animation: fadeInUp 0.8s 0.4s forwards;
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    gap: 20px; /* زيادة المسافة بين الأزرار */
+}
+
+.button-link {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: #00796b;
+    border: 3px solid #388E3C;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-link:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.button-link:active {
+    transform: scale(1.05);
+    background-color: #3e8e41;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 14px;
+}
+

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', Arial, sans-serif; /* تطبيق خط تجوال */
+}
+
+body {
+    background-color: #f0f4f3; /* الخلفية */
+    direction: rtl;
+    text-align: right;
+    overflow-x: hidden; /* إخفاء التمرير الأفقي */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #00796b 50%, #f0f4f3 50%);
+    position: relative;
+}
+
+.login-box {
+    width: 300px; /* حجم مناسب لصندوق تسجيل الدخول */
+    padding: 30px; /* تقليل الحشو */
+    border-radius: 12px; /* زوايا أكثر انحناء */
+    background-color: #ffffff; /* لون خلفية أبيض */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* تحسين الظل */
+    border: 2px solid #00796b; /* حدود أكثر وضوحاً */
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.login-box:hover {
+    transform: scale(1.05); /* تأثير التكبير عند التمرير */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2); /* ظل أكبر عند التمرير */
+}
+
+.top-right-logo {
+    position: absolute;
+    top: 10px; /* الصورة في أعلى الصفحة */
+    right: 10px; /* الصورة في يمين الصفحة */
+    width: 200px; /* تكبير حجم الصورة قليلاً */
+    height: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #00796b; /* اللون الأساسي */
+    text-align: center; /* توسيط العنوان */
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 20px; /* حجم أكبر */
+    font-weight: bold;
+    color: #005b4f; /* لون النص */
+}
+
+input {
+    width: 100%;
+    padding: 12px; /* حجم أصغر للحقل */
+    margin-top: 5px;
+    border: 2px solid #ccc; /* حدود أكثر وضوحاً */
+    border-radius: 6px; /* زوايا أكثر انحناء */
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background-color: #f0f4f3; /* لون الخلفية الداخلي */
+}
+
+input:focus {
+    border-color: #00796b; /* اللون عند التركيز */
+    background-color: #e0f2f1; /* تفاعل اللون عند التركيز */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* حجم أصغر للزر */
+    background-color: #00796b; /* لون الزر */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #005b4f; /* اللون عند تمرير الفأرة */
+    transform: scale(1.05); /* تكبير الزر عند التمرير */
+}
